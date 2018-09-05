@@ -5,12 +5,12 @@
     <parent>
         <artifactId>modules</artifactId>
         <groupId>org.motechproject</groupId>
-        <version>0.27</version>
+        <version>0.27.8</version>
         <relativePath>../</relativePath>
     </parent>
 
     <artifactId>mtraining</artifactId>
-    <version>0.27</version>
+    <version>0.27.8</version>
     <packaging>bundle</packaging>
     <name>mTraining Module</name>
 
@@ -31,6 +31,17 @@
             <artifactId>motech-pax-it</artifactId>
             <version>${motech.version}</version>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.ops4j.pax.url</groupId>
+                    <artifactId>pax-url-aether</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>org.apache.felix.http.api</artifactId>
+                </exclusion>
+
+            </exclusions>
         </dependency>
 
         <!-- Repository -->
@@ -38,6 +49,12 @@
             <groupId>org.motechproject</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
             <version>${motech.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.maven</groupId>
+                    <artifactId>maven-model</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
