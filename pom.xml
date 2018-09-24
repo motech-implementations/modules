@@ -97,6 +97,11 @@
             <groupId>org.eclipse.gemini.blueprint</groupId>
             <artifactId>gemini-blueprint-core</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.eclipse.gemini.blueprint</groupId>
+            <artifactId>gemini-blueprint-extensions</artifactId>
+        </dependency>
+
         <!-- SLF4J -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -402,7 +407,7 @@
                 <groupId>org.eclipse.gemini.blueprint</groupId>
                 <artifactId>gemini-blueprint-core</artifactId>
                 <version>2.1.0.RELEASE</version>
-                <scope>provided</scope>
+                <!--<scope>provided</scope>-->
 
                 <exclusions>
                     <exclusion>
@@ -442,6 +447,22 @@
                         <artifactId>javax.inject</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.gemini.blueprint</groupId>
+                <artifactId>gemini-blueprint-extensions</artifactId>
+                <version>2.1.0.RELEASE</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>javax.inject</groupId>
+                        <artifactId>javax.inject</artifactId>
+                    </exclusion>
+                    <exclusion>
+                        <groupId>org.eclipse.gemini.blueprint</groupId>
+                        <artifactId>gemini-blueprint-extender</artifactId>
+                    </exclusion>
+                </exclusions>
+
             </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
@@ -850,7 +871,7 @@
             <dependency>
                 <groupId>org.eclipse.gemini.blueprint</groupId>
                 <artifactId>org.motechproject.gemini-blueprint-test</artifactId>
-                <version>1.0.2.RELEASE</version>
+                <version>2.1.0.RELEASE</version>
                 <exclusions>
                     <exclusion>
                         <artifactId>com.springsource.org.junit</artifactId>
