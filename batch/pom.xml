@@ -368,7 +368,7 @@
         <dependency>
             <groupId>org.motechproject</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
-            <version>${motech.version}</version>
+
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>

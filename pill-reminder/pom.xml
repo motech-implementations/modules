@@ -25,7 +25,7 @@
         <dependency>
             <groupId>${motech.groupId}</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
-            <version>${motech.version}</version>
+
         </dependency>
         <dependency>
             <groupId>${motech.groupId}</groupId>

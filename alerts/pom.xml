@@ -36,7 +36,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
-            <version>${motech.version}</version>
+
         </dependency>
     </dependencies>
     <build>
@@ -65,6 +65,7 @@
                             org.motechproject.event.listener.annotations,
                             org.motechproject.server.config,
                             org.motechproject.server.config.service,
+                            org.datanucleus.enhancement,
                             *
                         </Import-Package>
                         <Bundle-DocURL>
