@@ -150,6 +150,11 @@
             <groupId>org.ops4j.pax.exam</groupId>
             <artifactId>pax-exam-inject</artifactId>
         </dependency>
+        <dependency>
+        <groupId>org.motechproject</groupId>
+        <artifactId>motech-platform-osgi-extender-fragment</artifactId>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -640,7 +645,7 @@
             <dependency>
                 <groupId>org.apache.servicemix.bundles</groupId>
                 <artifactId>org.apache.servicemix.bundles.aspectj</artifactId>
-                <version>1.8.5_1</version>
+                <version>1.9.1_1</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.servicemix.bundles</groupId>
