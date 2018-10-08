@@ -66,6 +66,7 @@
                             org.motechproject.server.config,
                             org.motechproject.server.config.service,
                             org.datanucleus.enhancement,
+                            org.springframework.validation.beanvalidation,
                             *
                         </Import-Package>
                         <Bundle-DocURL>
