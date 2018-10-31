@@ -4,7 +4,7 @@
     <parent>
         <artifactId>modules</artifactId>
         <groupId>org.motechproject</groupId>
-        <version>0.27</version>
+        <version>0.27.8</version>
         <relativePath>../</relativePath>
     </parent>
 
@@ -368,7 +368,7 @@
         <dependency>
             <groupId>org.motechproject</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
-            <version>${motech.version}</version>
+
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>

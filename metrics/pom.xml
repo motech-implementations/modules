@@ -3,13 +3,13 @@
     <parent>
         <artifactId>modules</artifactId>
         <groupId>org.motechproject</groupId>
-        <version>0.27</version>
+        <version>0.27.8</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>metrics</artifactId>
     <name>Metrics Module</name>
     <description>Metrics Module</description>
-    <version>0.27</version>
+    <version>0.27.8</version>
     <packaging>bundle</packaging>
     <properties>
         <modules.root.dir>${basedir}/..</modules.root.dir>
@@ -40,6 +40,8 @@
                             org.motechproject.event.listener.annotations,
                             org.motechproject.server.config,
                             org.motechproject.server.config.service,
+                            org.datanucleus.enhancement,
+                            org.springframework.validation.beanvalidation,
                             *
                         </Import-Package>
                         <Bundle-DocURL>

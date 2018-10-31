@@ -4,12 +4,12 @@
     <parent>
         <artifactId>modules</artifactId>
         <groupId>org.motechproject</groupId>
-        <version>0.27</version>
+        <version>0.27.8</version>
         <relativePath>../</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <version>0.27</version>
+    <version>0.27.8</version>
     <description>DHIS2 Module</description>
     <artifactId>dhis2</artifactId>
     <name>DHIS2 module</name>
@@ -28,6 +28,10 @@
                 <exclusion>
                     <groupId>commons-logging</groupId>
                     <artifactId>commons-logging</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.reflections</groupId>
+                    <artifactId>reflections</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -52,11 +56,11 @@
             <artifactId>motech-admin</artifactId>
             <version>${motech.version}</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test-mvc</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient-osgi</artifactId>

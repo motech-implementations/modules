@@ -4,13 +4,13 @@
     <parent>
         <artifactId>modules</artifactId>
         <groupId>org.motechproject</groupId>
-        <version>0.27</version>
+        <version>0.27.8</version>
         <relativePath>../</relativePath>
     </parent>
     <artifactId>message-campaign</artifactId>
     <name>MOTECH Message Campaign</name>
     <description>Message Campaign Module</description>
-    <version>0.27</version>
+    <version>0.27.8</version>
     <packaging>bundle</packaging>
     <properties>
         <modules.root.dir>${basedir}/..</modules.root.dir>
@@ -24,7 +24,7 @@
         <dependency>
             <groupId>${motech.groupId}</groupId>
             <artifactId>motech-platform-dataservices</artifactId>
-            <version>${motech.version}</version>
+
         </dependency>
         <dependency>
             <groupId>${motech.groupId}</groupId>
@@ -65,11 +65,11 @@
             </exclusions>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test-mvc</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
     </dependencies>
     <build>
         <resources>
